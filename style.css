@@ -1,0 +1,135 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Inicio de codigo para productos */
+
+.productos {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*forma simplificada para dar formatos de una misma propiedd*/
+    border: 2px solid #555555;
+    /* forma extensa:
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;*/
+    border-radius: 15px;
+}
+
+.productos li:hover {
+    border-color: darkorchid;
+}
+
+.productos li:active {
+    border-color: dodgerblue;
+}
+
+.productos h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 25px;
+}
+
+.productos-descripcion {
+    font-size: 18px;
+}
+
+.productos-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*Inicio de Codigo CSS para Contacto*/
+
+.tituloContacto {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Prompt', sans-serif;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 30px 0 0 0;
+}
+
+.imagengato {
+    width: 400px;
+    float: right;
+    margin: 80px 0 0 0;
+}
+
+form {
+    margin: 0 0;
+    padding: 80px;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 20%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: rgb(99, 19, 116);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgb(189, 60, 20);
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 480px){
+    h1 {
+      text-align: center;
+    }
+  
+    nav {
+      position: static;
+    }
+  
+    .caja, .main, .productos, .productos li, .productos h2, .productos-descripcion, .productos-precio   {
+      width: auto;
+    }
+  }
