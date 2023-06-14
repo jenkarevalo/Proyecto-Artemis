@@ -1,5 +1,11 @@
 body {
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.main {
+    width: 940px;
+    margin: 5px auto;
 }
 
 /* Inicio de codigo para productos */
@@ -55,17 +61,11 @@ body {
     margin-top: 10px;
 }
 
-.main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 /*Inicio de Codigo CSS para Contacto*/
 
 .tituloContacto {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Prompt', sans-serif;
     color: rgb(7, 7, 7);
     font-weight: bold;
     font-size: 25px;
@@ -102,6 +102,10 @@ form legend {
     margin: 20px 0;
 }
 
+.check {
+    color: rgb(180, 176, 176);
+}
+
 .enviar {
     width: 20%;
     padding: 15px 0;
@@ -118,6 +122,42 @@ form legend {
 .enviar:hover {
     background: rgb(189, 60, 20);
     transform: scale(1.2);
+}
+
+/*Inicio de Codigo CSS para Nosotros*/
+
+.contenedor {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contenedor .img {
+    width: 200%;
+    height: 200%;
+    humbnail-padding: .25rem;
+    thumbnail-border-radius: 5px;
+    flex-direction: column;
+}
+
+
+.bienvenida-nosotros-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 30px 0 0 0;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.bienvenida-nosotros-text {
+    text-align: justify;
+    padding-right: 50px;
+    color: black;
 }
 
 @media screen and (max-width: 480px){
